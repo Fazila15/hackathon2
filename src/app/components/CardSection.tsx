@@ -3,7 +3,7 @@ import { FaRegCheckCircle } from "react-icons/fa";
 import { AiOutlineCreditCard } from "react-icons/ai";
 import { LuSprout } from "react-icons/lu";
 
-export default function CardSEction() {
+export default function CardSection() {
     return (
         <section className="py-16 bg-white w-full">
             {/* Section Heading */}

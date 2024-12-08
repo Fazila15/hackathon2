@@ -1,8 +1,9 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function SectionTwo() {
     return (
-        <section className="w-full max-w-[1440px] py-16 px-4 md:py-[60px] md:px-20 bg-white">
+        <section className="w-full py-16 px-4 md:py-[60px] md:px-20 bg-white">
             <div className="flex flex-col md:flex-row justify-between items-center gap-8 md:gap-4">
                 {/* First Div with Heading, Text, and Button */}
                 <div className="w-full md:w-1/2 h-auto md:h-[478px] flex flex-col justify-between items-start bg-[#2A254B] text-white p-8 md:pt-[64px] md:pl-[64px] gap-3">
@@ -17,19 +18,24 @@ export default function SectionTwo() {
 
                     {/* View Collection Button */}
                     <div className="w-full max-w-[305px] md:max-w-[170px]">
+                        <Link href="/product">
+          
                         <button className="bg-[#4E4D93] text-black w-full h-[56px] text-[16px] font-normal leading-6 hover:bg-[#6354b0] transition duration-300">
                             View Collection
                         </button>
+            
+          
+        </Link>
                     </div>
                 </div>
 
                 {/* Second Div with Image */}
-                <div className="w-full md:w-1/2 h-auto md:h-[478px]">
+                <div className="w-full md:w-1/2 md:h-[478px] ">
                     <Image
                         src="/section2Image.svg"
                         alt="Product Collection"
                         width={768}
-                        height={478}
+                        height={465}
                         className="w-full h-auto object-cover"
                     />
                 </div>
