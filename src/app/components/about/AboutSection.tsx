@@ -2,8 +2,8 @@ import Link from 'next/link'
 import React from 'react'
 import AboutFeature from './AboutFeature'
 import AboutBrandSection from './AboutBrand'
-import AboutGetInTouchSection from './AboutGetInTouch'
-import SignUp from '../SignUp'
+import AboutGetInTouchSection from './AboutGetInTouch';
+import { SignUp } from '@clerk/nextjs';
 
 function AboutSection() {
   return (

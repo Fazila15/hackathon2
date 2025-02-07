@@ -5,7 +5,8 @@ import CeramicsSection from './components/ceramics/CeramicsSection'
 
 import FeaturesSection from './components/Feature'
 import PopularProducts from './components/PopularProducts'
-import SignUp from './components/SignUp'
+import { SignUp } from '@clerk/nextjs'
+
 
 
 

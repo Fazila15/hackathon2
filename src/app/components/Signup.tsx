@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import React from 'react'
 
-function SignUp() {
+export default function SignUp() {
   return (
     <section>
     <div className='flex justify-center items-center  h-[292px] md:h-[481px] leading-[50.4px] md:bg-[#F9F9F9]'>
@@ -19,6 +19,4 @@ function SignUp() {
     </div>
     </section>
   )
-}
-
-export default SignUp
+};
