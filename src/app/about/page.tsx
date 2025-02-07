@@ -1,23 +1,14 @@
-import AboutSection from "../components/About-section";
-import CardSection from "../components/CardSection";
-import Footer from "../components/Footer";
-import GetInTouch from "../components/Get-in-touch";
-import Navbar3 from "../components/Navbar3";
-import SectionTwo from "../components/Section2";
-import Signup from "../components/Signup";
-import TopBar from "../components/Top-Bar";
+import React from 'react'
+import AboutSection from '../components/about/AboutSection'
 
-export default function About () {
-    return (
+function About() {
+  return (
+    <section>
         <div>
-            <TopBar/>
-            <Navbar3/>
             <AboutSection/>
-            <SectionTwo/>
-            <GetInTouch/>
-            <CardSection/>
-            <Signup/>
-            <Footer/>
         </div>
-    )
+    </section>
+  )
 }
+
+export default About

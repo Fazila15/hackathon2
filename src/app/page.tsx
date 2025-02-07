@@ -1,23 +1,26 @@
-import Hero from "./components/Hero";
-import Navbar from "./components/Navbar";
-import CardSection from "./components/CardSection";
-import ProductsSection from './components/ProductsSection';
-import SectionTwo from "./components/Section2";
-import SignupSection from "./components/SignupSection";
-import Footer from "./components/Footer";
+import React from 'react'
+import HeroSection from './components/HeroSection'
+import BrandSection from './components/brand/BrandSection'
+import CeramicsSection from './components/ceramics/CeramicsSection'
+
+import FeaturesSection from './components/Feature'
+import PopularProducts from './components/PopularProducts'
+import SignUp from './components/SignUp'
 
 
-export default function Home() {
+
+
+function Home() {
   return (
-    <div>
-      <Navbar />
-      <Hero />
-      <CardSection />
-      <ProductsSection />
-      <SectionTwo />
-      <SignupSection />
-      <Footer />
-    
-    </div>
-  );
+    <main className=' flex flex-col gap-10'>
+      <HeroSection/> 
+      <BrandSection/>
+      <CeramicsSection/>
+     <PopularProducts/>
+      <SignUp/>
+      <FeaturesSection/>
+    </main>
+  )
 }
+
+export default Home

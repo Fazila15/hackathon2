@@ -1,30 +1,24 @@
-export default function Signup() {
-    return (
-        <section className="w-full  pt-12 pb-6 bg-gray-100 flex justify-center items-center">
-            <div className=" w-[1237px] h-[364px] py-16 px-4 ">
+import Link from 'next/link'
+import React from 'react'
 
-                {/* Heading and Paragraph */}
-                <div className="text-center mb-8">
-                    <h1 className="text-[20px] font-normal leading-[28px] md:text-[32px]  md:leading-[40px] lg:text-[36px] lg:leading-[50.4px] text-black">
-                        Join the club and get the benefits
-                    </h1>
-                    <p className="text-[14px] leading-[21px] font-normal md:text-[16px]  md:leading-[24px] text-[#2A254B] mt-4">
-                        Sign up for our newsletter and receive exclusive offers on new ranges, sales, pop up stores and more
-                    </p>
-                </div>
+function SignUp() {
+  return (
+    <section>
+    <div className='flex justify-center items-center  h-[292px] md:h-[481px] leading-[50.4px] md:bg-[#F9F9F9]'>
+        <div className='bg-white md:w-[1273px] md:h-[364px] flex flex-col pt-[70px] '> 
+    <h1 className='md:text-[36px] text-[32px] text-[#2A254B] font-clash text-center '> Join the club and get the benefits</h1>
+     
+     <p className='text-[18px]  text-[#2A254B] text-center leading-[24px] font-satoshi p-4'> Sign up for our newsletter and receive exclusive offers on new <br /> ranges, sales, pop up stores and more</p> 
+     <div className='md:w-[472px] flex items-center md:relative md:top-[5rem] mx-auto'>
+<input type="email" placeholder="your@email.com" className='md:w-[354px] md:h-[56px] hover:border-2 hover:border-black bg-[#F9F9F9] text-center'/>
+<button className='md:w-[118px] md:h-[56px] bg-[#2A254B] text-white text-[16px] placeholder:font-satoshi text-center px-3 md:px-2 hover:bg-white hover:text-blue-950 hover:border-2 hover:border-black' ><Link href="/" >Sign Up</Link> </button>
+</div>
+ </div>
 
-                {/* Input Field and Signup Button */}
-                <div className="flex justify-center items-center text-center">
-                    <input
-                        type="email"
-                        placeholder="youremail@.com"
-                        className="w-full sm:w-[354px] h-[56px] px-4 py-2 bg-gray-100 text-black transition duration-300 hover:bg-gray-300"
-                    />
-                    <button className="bg-gray-200 sm:h-[56px] sm:w-[100px] text-black lg:text-[16px] font-normal lg:leading-6 transition duration-300 hover:bg-gray-300 ">
-                        Sign Up
-                    </button>
-                </div>
-            </div>
-        </section>
-    );
+
+    </div>
+    </section>
+  )
 }
+
+export default SignUp

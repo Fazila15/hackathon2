@@ -5,6 +5,8 @@ export default {
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./pages/**/*.{js,ts,jsx,tsx}", // Pages folder
+    "./app/**/*.{js,ts,jsx,tsx}",  // Next.js App Router
   ],
   theme: {
     extend: {
