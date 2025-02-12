@@ -10,9 +10,6 @@ const nextConfig = {
       },
     ],
   },
-  experimental: {
-    appDir: true, // Ensure Next.js App Router is enabled
-  },
 };
 
 export default nextConfig;
